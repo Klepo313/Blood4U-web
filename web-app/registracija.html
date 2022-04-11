@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+</head>
+<body>
+   <div class="mainContent">
+        <h1>Blood4U</h1>
+        <span class="text">Registriraj se u B4U</span>
+        <form>
+            <div class="formInp">
+                <input id="inpName" type="text" placeholder="Ime i Prezime">
+                <input id="inpEmail" type="email" placeholder="Email">
+                <input id="inpPass" type="password" placeholder="Password">
+                <input id="inpTelefon" type="number" placeholder="Telefon">
+                <input id="inpAdress" type="text" placeholder="Adresa stanovanja">
+                <select id="inpKrvnaGrupa">
+                    <option value="Krvna grupa" selected>Krvna grupa --</option>
+                    <option value="0+"> 0+</option>
+                    <option value="A+"> A+</option>
+                    <option value="B+"> B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="0-"> 0-</option>
+                    <option value="A-"> A-</option>
+                    <option value="B-"> B-</option>
+                    <option value="AB-">AB-</option>
+
+                  </select>
+            </div>  
+            <button id="btnRegister" type="button">Registriraj se</button>
+        </form>
+   </div>
+</body>
+</html>
+
+<style>
+    *{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        width: 100%;
+    }
+    h1{
+        margin-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 73px;
+        text-align: center;
+
+        color: #CA2C24;
+    }
+    .text{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 160%;
+        color: #000000;
+    }
+    .mainContent{
+        text-align: center;
+    }
+    .formInp{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+    .formInp > input {
+        width: 400px;
+        height: 60px;
+        padding-left: 20px;
+
+        opacity: 1;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        color: #000000;
+    }
+    #inpKrvnaGrupa{
+        border: 3px solid #D22F27;
+        font-weight: 800;
+        color: #D22F27;
+        text-transform: uppercase;
+        border-radius: 10px;
+        padding-left: 20px;
+    }
+    #inpKrvnaGrupa::placeholder{
+        color: #D22F27;
+    }
+    input:focus{
+        background-color: #f3f3f3;
+    }
+    #btnRegister{
+        margin-top: 40px;
+        width: 400px;
+        height: 60px;
+        background: #D22F27;
+        border-radius: 10px;
+
+        border: none;
+        outline: none;
+
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        /* or 35px */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    #btnRegister:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    
+</style>
+
