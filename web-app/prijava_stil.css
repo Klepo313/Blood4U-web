@@ -150,16 +150,28 @@ color: #000000;
 {
     position: absolute;
 width: 435px;
-height: 70px;
+height: 50px;
 left: 690px;
 top: 467px;
+
 
 }
 .password
 {
     position: absolute;
 width: 435px;
-height: 70px;
+height: 50px;
 left: 690px;
-top: 588px;
+top: 580px;
 }
+#icon1
+{
+    padding-top: 485px;
+    padding-left: 630px;
+}
+#icon2
+{
+    padding-top: 100px;
+    padding-left: 630px;
+}
+
