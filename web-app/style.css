@@ -1,0 +1,496 @@
+body
+{
+width: 1895px;
+height: 5218px;
+
+background: #F7F7F7;
+margin:0;
+}
+.vector
+{
+    display:inline-block;
+    position: absolute;
+    width: 1000px;
+    height: 820px;
+    left: 895px;
+    top: 150px;
+    overflow: hidden;
+    min-height: 1px;
+    
+}
+.logo
+{
+    position: absolute;
+left: 2%;
+right: 94.9%;
+top: 3%;
+bottom: 97.97%;
+}
+.naslovnica
+{
+    position: absolute;
+    width: 98px;
+    height: 31px;
+    left: 214px;
+    top:5%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 170%;
+    /* identical to box height, or 31px */
+    
+    color: #000000;
+    opacity: 100%;
+}
+.darivanje
+{
+
+    position: absolute;
+    width: 104px;
+    height: 31px;
+    left: 370px;
+    top: 5%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 170%;
+    /* identical to box height, or 31px */
+    
+    
+    color: #000000;
+}
+.lokacije
+{
+    position: absolute;
+width: 74px;
+height: 31px;
+left: 532px;
+top: 5%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 170%;
+/* identical to box height, or 31px */
+
+
+color: #000000;
+}
+.info
+{
+    position: absolute;
+    width: 73px;
+    height: 31px;
+    left: 684px;
+    top: 5%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 170%;
+    /* identical to box height, or 31px */
+    
+    
+    color: #000000;
+}
+.kontakt
+{
+    position: absolute;
+width: 72px;
+height: 31px;
+left: 835px;
+top: 5%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 170%;
+/* identical to box height, or 31px */
+
+
+color: #000000;
+}
+
+.prijava
+{
+    position: absolute;
+width: 185px;
+height: 70px;
+left: 1269px;
+top: 5%;
+
+border: 1px solid #242424;
+box-sizing: border-box;
+border-radius: 15px 0px;
+background-color: #F7F7F7;
+z-index: 2;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+cursor:pointer;
+}
+.daruj_krv
+{
+    position: absolute;
+width: 185px;
+height: 70px;
+left: 1542px;
+top: 5%;
+
+background-color: #D22F27;
+border-radius: 15px 0px;
+box-sizing: border-box;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+color: #000000;
+cursor:pointer;
+}
+.profile_icon
+{
+    position: absolute;
+height: 28px;
+left: 1810px;
+right: 78px;
+top: 7%;
+
+opacity: 0.8;
+}
+.slika_zene
+{
+    position: absolute;
+width: 520px;
+height: 680px;
+left: 1260px;
+top: 232px;
+}
+.heading1
+{
+    position: absolute;
+width: 349px;
+height: 119px;
+left: 100px;
+top: 202px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bolder;
+font-size: 70px;
+line-height: 170%;
+/* identical to box height, or 119px */
+
+
+color: #080808;
+}
+.heading2
+{
+    position: absolute;
+width: 718px;
+height: 187px;
+left: 100px;
+top: 255px;
+
+font-family: Poppins;
+font-style: italic;
+font-weight: bolder;
+font-size: 110px;
+line-height: 170%;
+/* identical to box height, or 187px */
+
+
+color: #CA2C24;
+}
+.heading3
+{
+    position: absolute;
+width: 521px;
+height: 149px;
+left: 98px;
+top: 495px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bolder;
+font-size: 20px;
+line-height: 180%;
+/* or 36px */
+
+text-align: justify;
+
+color: #000000;
+}
+.find_more
+{
+    position: absolute;
+width: 374px;
+height: 95px;
+left: 100px;
+top: 720px;
+
+background: #D22F27;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 170%;
+color:#FFFFFF;
+}
+.heading2_1
+{
+    position: absolute;
+width: 900px;
+height: 119px;
+left: 510px;
+top: 1164px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bolder;
+font-size: 70px;
+line-height: 170%;
+/* identical to box height, or 119px */
+
+text-align: center;
+
+color: #CD2E26;
+}
+.text_grid
+{
+    width:85%;
+    height:auto;
+}
+.heading2_2
+{
+    position: absolute;
+width: 545px;
+height: 68px;
+left: 250px;
+top: 1328px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bolder;
+font-size: 40px;
+line-height: 170%;
+/* identical to box height, or 68px */
+
+
+color: #080808;
+}
+.heading2_2_1
+{
+    position: absolute;
+width: 605px;
+height: 68px;
+left: 1074px;
+top: 1328px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 170%;
+/* identical to box height, or 68px */
+
+
+color: #080808;
+}
+.heading2_2_2
+{
+    position: absolute;
+width: 373px;
+height: 40px;
+left: 250px;
+top: 1424px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bolder;
+font-size: 20px;
+line-height: 200%;
+/* identical to box height, or 40px */
+
+text-align: justify;
+
+color: #D22F27;
+}
+.text1
+{
+    position: absolute;
+width: 545px;
+height: 492px;
+left: 225px;
+top: 1492px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 200%;
+/* or 34px */
+
+text-align: justify;
+vertical-align: top;
+
+color: #000000;
+
+}
+.text2
+{
+    position: absolute;
+width: 545px;
+height: 492px;
+left: 1049px;
+top: 1492px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 200%;
+/* or 34px */
+
+text-align: justify;
+vertical-align: top;
+
+color: #000000;
+
+}
+.heading4
+{
+position: absolute;
+width: 617px;
+height: 68px;
+left: 250px;
+top: 2012px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bolder;
+font-size: 40px;
+line-height: 170%;
+/* identical to box height, or 68px */
+
+
+color: #000000;
+}
+.heading4_1
+{
+    position: absolute;
+width: 585px;
+height: 40px;
+left: 250px;
+top: 2108px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 200%;
+/* identical to box height, or 40px */
+
+text-align: justify;
+text-transform: uppercase;
+
+color: #D22F27;
+
+}
+a:link    { color:#F7F7F7; text-decoration: none; }
+a:visited { color:#F7F7F7;text-decoration: none; }
+a:hover   { color:#F7F7F7; text-decoration: none; }
+a:active  { color:#F7F7F7; text-decoration: none; }
+.text3
+{
+    position: absolute;
+width: 545px;
+height: 582px;
+left: 225px;
+top: 2176px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 200%;
+/* or 34px */
+
+text-align: justify;
+
+color: #000000;
+}
+.heading5
+{
+    
+position: absolute;
+width: 694px;
+height: 68px;
+left: 1074px;
+top: 2012px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bolder;
+font-size: 40px;
+line-height: 170%;
+/* identical to box height, or 68px */
+
+
+color: #000000;
+}
+.heading5_1
+{
+    position: absolute;
+width: 255px;
+height: 40px;
+left: 1074px;
+top: 2108px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bolder;
+font-size: 20px;
+line-height: 200%;
+/* identical to box height, or 40px */
+
+text-align: justify;
+
+color: #D22F27;
+}
+.text4
+{
+    position: absolute;
+width: 545px;
+height: 582px;
+left: 1049px;
+top: 2176px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 200%;
+/* or 34px */
+
+text-align: justify;
+
+color: #000000;
+}
+.blue_button
+{
+    position: absolute;
+width: 804px;
+height: 95px;
+left: 558px;
+top: 2878px;
+
+background: #2D4059;
+color:#F7F7F7;
+cursor:pointer;
+}

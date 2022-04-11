@@ -1,0 +1,78 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#my_button{
+    position:absolute;
+    color: #fff;
+    background-color: #D22F27;
+    padding: 11px;
+
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    -o-table-baseline:central;
+    width:80px;
+    height:50px;
+    left:5%;
+    text-align:center;
+    text-decoration:none;
+    cursor: pointer;
+
+    z-index: 2;
+
+    left:0px;
+    top:75px;
+    margin: 0px auto;
+
+    border-radius: 15px 0px 0px 15px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+ #my_button:hover
+   {
+       background-color:#b92c25;
+   } 
+
+.sidemenu
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidemenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color:#b92c25;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidemenu a:hover {
+    color: #D22F27;
+  }
+  .sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
