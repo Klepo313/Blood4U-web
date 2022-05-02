@@ -157,6 +157,8 @@ font-style: normal;
 font-weight: bold;
 color: #000000;
 cursor:pointer;
+outline: none;
+border: none;
 }
 .profile_icon
 {
@@ -233,9 +235,9 @@ color: #000000;
 }
 .find_more
 {
-    position: absolute;
+position: absolute;
 width: 374px;
-height: 95px;
+height: 75px;
 left: 100px;
 top: 720px;
 
@@ -246,6 +248,8 @@ font-weight: normal;
 font-size: 18px;
 line-height: 170%;
 color:#FFFFFF;
+outline: none;
+border: none;
 }
 .heading2_1
 {

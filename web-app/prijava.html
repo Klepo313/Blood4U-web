@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="prijava_stil.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Prijava</title>
 </head>
 <body>
-    <div class="logo">
-        <img src="assets/img/blood.png" width="50px" height="50px">
-    </div>
-    <div class="naslovnica">
-        <p>Naslovnica</p>
-    </div>
-    <div class="darivanje">
-        <p>O darivanju</p>
-    </div>
-    <div class="lokacije">
-        <p>Lokacije</p>
-    </div>
-    <div class="info">
-        <p>O nama</p>
-    </div>
-    
-    <div class="naslov">
-        <h1>Blood4U</h1>
-    </div>
-    <!--<div clas="podnaslov">
-        <h1>Prijavi se u B4U</h1>
-    </div> -->
-    <form action="/action_page.php">
-    <div class="login1">
-        <i class="fa fa-envelope icon" id="icon1"></i>
-        <input type="email" class="mail">
-    </div>
-    <div class="login2">
-        <i class="fa fa-unlock-alt" id="icon2"></i>
-        <input type="text" class="password">
-    </div>
-    </form>
+    <img onclick="history.back()" class="my-5 btn btn-outline-success backArrow" src="assets/img/left-arrow-svgrepo-com.svg" alt="arrow">
 
+    <div class="mainContent">
+        <h1>Blood4U</h1>
+        <span class="text">Prijavi se u B4U</span>
+        <form>
+            <div class="formInp">
+                <input id="inpEmail" type="email" value="" placeholder="Email" required>
+                <input id="inpPass" type="password" value="" placeholder="Password" required>
+            </div>  
+            <button id="btnRegister" type="submit" onclick="login()">Prijavi se</button>
+        </form>
+   </div>
+   <script src="prijava.js"></script>
 </body>
 </html>
+
+<style>
+    *{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.backArrow{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  margin: 40px 40px;
+  transform: scale(0.7);
+}
+.backArrow:hover{
+  transform: scale(0.6);
+}
+h1{
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    color: #CA2C24;
+}
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 160%;
+    color: #000000;
+}
+.mainContent{
+    text-align: center;
+}
+.formInp{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.formInp > input {
+    width: 400px;
+    height: 60px;
+    padding-left: 20px;
+    opacity: 1;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000000;
+}
+#inpKrvnaGrupa{
+    border: 3px solid #D22F27;
+    font-weight: 800;
+    color: #D22F27;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+#inpKrvnaGrupa::placeholder{
+    color: #D22F27;
+}
+input:focus{
+    background-color: #f3f3f3;
+}
+#btnRegister{
+    width: 400px;
+    height: 60px;
+    background: #D22F27;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 35px */
+    text-align: center;
+    color: #FFFFFF;
+}
+#btnRegister:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+</style>
