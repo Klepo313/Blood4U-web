@@ -6,6 +6,7 @@ body {
 }
 *{
   margin: 0;
+  transition: all 0.3s ease-in;
 }
 #my_button{
     position:absolute;
@@ -51,7 +52,7 @@ body {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     transition: 0.5s;
     padding: 30px;
@@ -80,13 +81,21 @@ body {
   .card{
     display: flex;
     flex-direction: column;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
   }
   h1{
-    margin: 10px 0px;
+    margin-left: 15px;
+    font-size: 25px;
+  }
+  h1:hover{
+    text-decoration: 2px solid underline;
+    opacity: 0.9;
+    cursor: pointer;
   }
   h3{
+    margin-left: 15px;
     font-size: 16px;
-    color: #D22F27;
   }
   .mapIcon{
     width: 20px;
@@ -95,12 +104,20 @@ body {
   }
   .card-img{
     width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
   }
   .card > span{
     margin: 10px 0px;
+    display: flex;
   }
   b{
     color: #25b92a;
+    margin-left: 15px;
+    padding-right: 5px;
+  }
+  .icon{
+    width: 20px;
   }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
