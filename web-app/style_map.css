@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 0;
 }
+*{
+  margin: 0;
+}
 #my_button{
     position:absolute;
     color: #fff;
@@ -43,15 +46,18 @@ body {
 .sidemenu
 {
     height: 100%;
-    width: 0;
+    width: 300px;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 236, 236);
     overflow-x: hidden;
     transition: 0.5s;
+    padding: 30px;
     padding-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    border-right: 6px solid #D22F27;
 }
 .sidemenu a {
     padding: 8px 8px 8px 32px;
@@ -71,7 +77,31 @@ body {
     font-size: 36px;
     margin-left: 50px;
   }
-  
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    margin: 10px 0px;
+  }
+  h3{
+    font-size: 16px;
+    color: #D22F27;
+  }
+  .mapIcon{
+    width: 20px;
+    color: #D22F27;
+    fill: #D22F27;
+  }
+  .card-img{
+    width: 100%;
+  }
+  .card > span{
+    margin: 10px 0px;
+  }
+  b{
+    color: #25b92a;
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}

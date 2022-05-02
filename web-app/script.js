@@ -54,7 +54,8 @@ sessionStorage.getItem('email')
 sessionStorage.getItem('krvna_grupa')
 
 let map;
-const firule = { lat: 43.50, lng: 16.45 };
+const firule = { lat: -25.363, lng: 131.044 };
+
 
 /**
  * The CenterControl adds a control to the map that recenters the map on
@@ -93,7 +94,7 @@ function CenterControl(controlDiv, map) {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
+    zoom: 2,
     center: firule,
   });
   // Create the DIV to hold the control and call the CenterControl()
