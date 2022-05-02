@@ -103,6 +103,9 @@ a{
     text-decoration: none;
     color: #D22F27;
 }
+li a {
+    color: #000000;
+}
 .path{
     position: absolute;
 }
