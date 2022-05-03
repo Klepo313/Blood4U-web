@@ -13,18 +13,19 @@
         <nav>
             <img src="assets/img/blood_new.png" alt="blood_icon" class="nav-icon">
             <ul>
-                <li><a href="/web-app/map.html"> Kart s ustanovama  </a></li>
+                <li><a href="/web-app/index.html"> Naslovnica  </a></li>
+                <li><a href="/web-app/map.html"> Karta s ustanovama  </a></li>
                 <li><a href="https://www.kbsplit.hr/korisne-informacije/darivanje-krvi"> O darivanju </a></li>
                 <!-- <li><a href="/web-app/account.html"> Moj račun    </a></li> -->
                 <!-- <li>Tehnologije</li> -->
             </ul>
-            <button id="btnDarujKrv" onclick="location.href = 'prijava.html';">Odjava</button>
+            <button id="btnDarujKrv" onclick="logout()">Odjava</button>
         </nav>
     </header>
 
     <main>
         <div class="image">
-            <img src="assets/img/o_15558554_1024.webp" alt="slika">
+            <img class="image-img" src="" alt="slika">
         </div>
         <div class="card">
             <div class="header">
@@ -55,7 +56,23 @@
         </div>
         
     </main>
-    <!-- <button id="btnDaruj" onclick="location.href=''">Daruj krv</button> -->
+    <button class="btnDaruj" onclick="openPop_up()">Daruj krv</button>
+
+    <div class="pop-up">
+        <div class="container">
+            <span onclick="closePop_up()">Zatvori</span>
+            <h1 class="pop-h1">Uvjeti za darivanje krvi</h1>
+            <button class="btnMore"><a href="http://www.unicath.hr/hks2015/wp-content/uploads/2014/11/DARIVANJE-KRVI-2014.pdf" target="_blank" download="sve_o_darivanju_krvi">Uvjeti za darivanje krvi</a></button>
+            <form action="">
+                <div>
+                    <input name="uvjeti" type="checkbox" required>
+                    <label for="uvjeti">Pročitao sam i prihvaćam tražene uvjete koji mi omogućuju darivanje krvi</label>
+                </div>
+                <button class="btnDaruj" id="btnDaruj" type="submit">Daruj krv</button>
+            </form>
+            
+        </div>
+    </div>
 
     
 

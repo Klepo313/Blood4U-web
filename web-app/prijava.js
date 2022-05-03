@@ -13,6 +13,7 @@ function login() {
                 console.log(parsedJson)
 
                 console.log(parsedJson.kor_id)
+                sessionStorage.setItem('kor_id', parsedJson.kor_id)
 
                 if(parsedJson.status === "unsuccessful"){
                     email.style.border = "3px solid #D22F27"

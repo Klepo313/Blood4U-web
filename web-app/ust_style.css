@@ -99,7 +99,7 @@ h3{
     color: #D22F27;
     margin-bottom: 10px;
 }
-#btnDaruj{
+.btnDaruj{
     border: none;
     outline: none;
     color: white;
@@ -108,9 +108,10 @@ h3{
 
     background: #D22F27;
     border-radius: 10px;
+    margin-top: 15px;
     margin-left: auto;
 }
-#btnDaruj:hover{
+.btnDaruj:hover{
     opacity: 0.8;
     cursor: pointer;
 }
@@ -130,4 +131,66 @@ strong>span{
 }
 main:last-of-type{
     margin-left: auto;
+}
+
+.pop-up{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    z-index: 10;
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pop-h1{
+    text-align: center;
+}
+.btnMore {
+    background: none;
+    outline: none;
+    border: none;
+    color: #D22F27;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #CA2C24;
+}
+.btnMore:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.9);
+    transition: all 0.1s ease-in;
+    /* outline: 1px solid #CA2C24; */
+}
+.container > span{
+    position: absolute;
+    color: black;
+    bottom: 100px;
+    left: 450px;
+}
+.container > span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#btnDaruj{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }

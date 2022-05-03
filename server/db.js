@@ -51,9 +51,38 @@ const loginUser = (request, response) => {
 
 }
 
+const setReservation = (request, response) => {
+
+    var kor_id = parseInt(request.params.kor_id);
+    var ustanova = request.params.ustanova;     
+
+    // console.log(data)
+
+    // obj = {
+    //     "kor_id": data.kor_id,
+    //     "ustanova": data.ustanova
+    // }
+
+    // pool.query(`insert into rezervacija (rez_ustanova, rez_osa_id)
+    //             values (${obj.ustanova}, ${obj.kor_id})`, (err, results) => {
+    //     if(err) throw err;
+    //     else{
+    //         response.json();
+    //     }
+    // })
+
+    pool.query(`insert into rezervacija (rez_ustanova, rez_osa_id)
+                values ('${ustanova}', ${kor_id})`, (err, results) => {
+        if(err) throw err;
+        else{
+            response.json();
+        }
+    })
+}
 
 
 module.exports = {
     pool,
     loginUser,
+    setReservation
 } 

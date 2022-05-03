@@ -43,7 +43,11 @@ body {
    {
        background-color:#b92c25;
    } 
-
+#my_button > img{
+  margin-top: -0px;
+  width: 24px;
+  fill: white;
+}
 .sidemenu
 {
     height: 100%;

@@ -17,7 +17,7 @@
                 <li><a href="#main3"> Lokacije    </a></li>
                 <!-- <li>Tehnologije</li> -->
             </ul>
-            <button id="btnDarujKrv" onclick="location.href = 'prijava.html';">Daruj krv</button>
+            <button id="btnDarujKrv" onclick="openNextPage()">Daruj krv</button>
         </nav>
     </header>
     <main>
@@ -92,36 +92,36 @@
            <div class="grid-item1">
                <img class="locationIcon" src="assets/img/locationIcon.svg" alt="" class="pinIcon">
                <h5>Zagreb</h5>
-               <button id="btnVidiVise" class="btnMore">Hrvatski zavod za transfuzijsku medicinu</button>
+               <button id="btnVidiVise" class="btnMore" onclick="window.open('https://hztm.hr/', '_blank')">Hrvatski zavod za transfuzijsku medicinu</button>
            </div>
            <div class="grid-item1">
                 <img class="locationIcon" src="assets/img/locationIcon.svg" alt="" class="pinIcon">
                 <h5>Dubrovnik</h5>
-                <button id="btnVidiVise" class="btnMore">Hrvatski Crveni križ</button>
+                <button id="btnVidiVise" class="btnMore" onclick="window.open('http://www.crvenikrizdubrovnik.hr/', '_blank')">Hrvatski Crveni križ</button>
             </div>
            <div class="grid-item1">
                 <img class="locationIcon" src="assets/img/locationIcon.svg" alt="" class="pinIcon">
                <h5>Split</h5>
-               <button id="btnVidiVise" class="btnMore">Hrvatski crveni križ - Gradsko društvo Crvenog križa Split</button>
-               <button id="btnVidiVise" class="btnMore">KBC Split - Firule, Križine</button>
+               <button id="btnVidiVise" class="btnMore" onclick="window.open('http://www.crvenikriz-split.com/', '_blank')">Hrvatski crveni križ - Gradsko društvo Crvenog križa Split</button>
+               <button id="btnVidiVise" class="btnMore" onclick="window.open('https://www.kbsplit.hr/', '_blank')">KBC Split - Firule, Križine</button>
            </div>
 
            <div class="grid-item1">
                <img class="locationIcon" src="assets/img/locationIcon.svg" alt="" class="pinIcon">
                <h5>Šibenik</h5>
-               <button id="btnVidiVise" class="btnMore">Hrvatski Crveni križ</button>
-               <button id="btnVidiVise" class="btnMore">KLUB DRAGOVOLJNIH DAVATELJA KRVI</button>
+               <button id="btnVidiVise" class="btnMore" onclick="window.open('http://www.gdck-sibenik.hr/', '_blank')">Hrvatski Crveni križ</button>
+               <button id="btnVidiVise" class="btnMore" onclick="window.open('https://hr-hr.facebook.com/ddk.vodice/', '_blank')">KLUB DRAGOVOLJNIH DAVATELJA KRVI</button>
            </div>
                       
            <div class="grid-item1">
                 <img class="locationIcon" src="assets/img/locationIcon.svg" alt="" class="pinIcon">
                 <h5>Zadar</h5>
-                <button id="btnVidiVise" class="btnMore">Gradsko društvo Crvenog križa Zadar</button>
+                <button id="btnVidiVise" class="btnMore" onclick="window.open('https://www.crvenikrizzadar.com/', '_blank')">Gradsko društvo Crvenog križa Zadar</button>
             </div>
            <div class="grid-item1">
                <img class="locationIcon" src="assets/img/locationIcon.svg" alt="" class="pinIcon">
                <h5>Osijek</h5>
-               <button id="btnVidiVise" class="btnMore">Klinički Zavod za transfuzijsku medicinu</button>
+               <button id="btnVidiVise" class="btnMore" onclick="window.open('https://www.kbco.hr/klinika/klinicki-zavod-za-transfuzijsku-medicinu/', '_blank')">Klinički Zavod za transfuzijsku medicinu</button>
            </div>
         </div>
         <button class="btnMore" onclick="window.location.href = 'https://www.google.com/search?tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsZfJIX12IlY3z9WxdYyeL-sQ6EYgw:1651526171205&q=lokacije+za+darivanje+krvi&rflfq=1&num=10&sa=X&ved=2ahUKEwi3j5a23sH3AhWjl4sKHXEfDjEQjGp6BAggEAE&biw=1746&bih=844&dpr=1.1#rlfi=hd:;si:,46.28241893883289,17.80600947858762;mv:[[48.39658414720955,25.10086832167577],[43.12132087871077,10.533060259837619],null,[45.82138480780924,17.816964290756694],7]'">Vidi ostale lokacije za darivanje krvi</button>
@@ -142,3 +142,14 @@
 
 </body>
 </html>
+
+<script>
+    function openNextPage(){
+        var kor_id = sessionStorage.getItem('kor_id')
+        if(kor_id!=null){
+            window.location.href = '/web-app/map.html'
+        } else{
+            window.location.href = '/web-app/prijava.html'
+        }
+    }
+</script>

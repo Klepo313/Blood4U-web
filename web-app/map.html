@@ -14,7 +14,7 @@
         1i1024!2i768!4f13.1!3m3!1m2!1s0x13355dfc6bbcf517%3A0xa1798ff631b49f98!2s21000%2C%20Split!5e0!3m2!1shr!2shr!4v1620396621146!5m2!1shr!2shr" 
         width="100%" height="965.3px" style="border:0"  margin="0" allowfullscreen="true" loading="lazy" z-index="1">
         </iframe>          <!--Unos Google Mape Splita na site-->
-        <button id="my_button"></button>
+        <button id="my_button" onclick="openNav()"><img src="assets/img/left-arrow-svgrepo-com.svg" alt=""></button>
     </div>
   <div id="mySidenav" class="sidemenu">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -38,11 +38,11 @@
    -->
   <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.display = "block";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.display = "none";
   }
   </script>
   <script src="map_script.js"></script>

@@ -11,6 +11,7 @@ const port = 3000;
 app.use(cors());
 
 app.get("/login/:email/:password", pool.loginUser)
+app.post("/reservation/:kor_id/:ustanova", pool.setReservation)
 
 app.listen(port, () => {
     var host = "localhost";
