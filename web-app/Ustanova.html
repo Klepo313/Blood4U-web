@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ustanova</title>
+    <link rel="stylesheet" href="ust_style.css">
 </head>
 <body>
     
+    <header>
+        <nav>
+            <img src="assets/img/blood_new.png" alt="blood_icon" class="nav-icon">
+            <ul>
+                <li><a href="/web-app/map.html"> Kart s ustanovama  </a></li>
+                <li><a href="https://www.kbsplit.hr/korisne-informacije/darivanje-krvi"> O darivanju </a></li>
+                <!-- <li><a href="/web-app/account.html"> Moj račun    </a></li> -->
+                <!-- <li>Tehnologije</li> -->
+            </ul>
+            <button id="btnDarujKrv" onclick="location.href = 'prijava.html';">Odjava</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image">
+            <img src="assets/img/o_15558554_1024.webp" alt="slika">
+        </div>
+        <div class="card">
+            <div class="header">
+                <h1>Križine, Split</h1>
+                <h2>Poljička cesta 37, 21000 - Split</h2>
+            </div>
+            <div class="details">
+                <div>
+                   <h3>Radno vrijeme</h3>
+                   <img src="assets/img/Radno vrijeme.svg" alt="radnovrijeme" /> 
+                </div>
+                <div class="main-kontakt">
+                    <h3>Kontakt</h3>
+                    <div class="kontakt">
+                        <strong>Telefon: <span class="tel">123 456 7891</span></strong> 
+                        <strong class="s2">Email: <span class="email">office@dm.dm</span></strong>
+                    </div>
+                </div>
+                <div>
+                    <h3>Potrebna krv</h3>
+                    <div>
+                        <span class="krv">A</span>
+                        <span class="krv">AB+</span>
+                        <span class="krv">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <!-- <button id="btnDaruj" onclick="location.href=''">Daruj krv</button> -->
+
     
 
     <script src="ust_script.js"></script>
